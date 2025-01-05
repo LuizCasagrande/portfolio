@@ -1,0 +1,36 @@
+@import 'primeicons/primeicons.css';
+@import 'primeflex/primeflex.css';
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+html, body {
+  margin: 0;
+  height: 100dvh;
+
+  font-family: 'Quicksand', serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  background: linear-gradient(rgba(black, .4), rgba(black, .4)), url('https://w.wallhaven.cc/full/m9/wallhaven-m9y67k.png') fixed center;
+  background-size: cover;
+
+  user-select: none;
+  text-shadow: 4px 4px rebeccapurple;
+  opacity: .9;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darkgray;
+}
