@@ -10,13 +10,10 @@ html, body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  user-select: none;
 
   background: linear-gradient(rgba(black, .4), rgba(black, .4)), url('https://w.wallhaven.cc/full/m9/wallhaven-m9y67k.png') fixed center;
   background-size: cover;
-
-  user-select: none;
-  text-shadow: 4px 4px rebeccapurple;
-  opacity: .9;
 }
 
 ::-webkit-scrollbar {

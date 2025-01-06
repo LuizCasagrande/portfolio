@@ -4,6 +4,7 @@ dist/
 tmp/
 app/**/*.js
 app/**/*.js.map
+src/environments/environment.ts
 
 # dependencies
 node_modules/

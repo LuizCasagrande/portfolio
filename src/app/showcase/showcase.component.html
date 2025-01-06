@@ -1,3 +1,25 @@
-<div class="flex flex-column text-center justify-content-center h-full">
-  <h3>Work in progress...</h3>
+<div class="flex flex-column text-center align-items-center justify-content-center h-full">
+  <h2>Projects</h2>
+  <div *ngFor="let repo of repositories" class="w-10 xl:w-4 max-w-30rem px-3 my-3 border-2 border-round-xl">
+    <h3>{{ repo.name }}</h3>
+    <p>{{ repo.description }}</p>
+
+    <div class="flex align-items-center pb-4">
+      <div class="w-6">
+        <h4 class="font-light my-2">Languages:</h4>
+        <div *ngFor="let language of repo.languages">
+          <span [style]="{color: language.color}">{{ language.name }}</span>
+        </div>
+      </div>
+
+      <div class="flex flex-column align-items-start">
+        <a href="https://fotografie-nine.vercel.app" target="_blank">
+          <p-button [text]="true" icon="pi pi-external-link" label="Deployment"/>
+        </a>
+        <a [href]="repo.url" target="_blank">
+          <p-button [text]="true" icon="pi pi-external-link" label="Github"/>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
