@@ -19,7 +19,7 @@ export class AppComponent {
     this.primeNgConfig.ripple.set(true);
 
     const name = 'Luiz Casagrande';
-    const description = 'Hi, I\'m Luiz, a passionate software engineer from Brazil.';
+    const description = 'A Software Engineer from Brazil with a passion for innovative solutions.';
     const metaTags = [
       name,
       'Portfolio',

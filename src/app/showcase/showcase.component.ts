@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {GithubService} from '../github/github.service';
 import {map, Repository} from '../github/repository';
-import {NgForOf} from '@angular/common';
+import {NgForOf, NgIf} from '@angular/common';
 import {Button} from 'primeng/button';
 
 @Component({
@@ -9,8 +9,9 @@ import {Button} from 'primeng/button';
   templateUrl: './showcase.component.html',
   imports: [
     NgForOf,
+    NgIf,
     Button,
-  ]
+  ],
 })
 export class ShowcaseComponent implements OnInit {
 

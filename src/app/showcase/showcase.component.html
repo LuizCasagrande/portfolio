@@ -1,6 +1,6 @@
 <div class="flex flex-column text-center align-items-center justify-content-center h-full">
   <h2>Projects</h2>
-  <div *ngFor="let repo of repositories" class="w-10 xl:w-4 max-w-30rem px-3 my-3 border-2 border-round-xl">
+  <div *ngFor="let repo of repositories" class="w-10 xl:w-4 max-w-30rem px-3 my-3 border-2 border-round-xl blur">
     <h3>{{ repo.name }}</h3>
     <p>{{ repo.description }}</p>
 
@@ -13,7 +13,7 @@
       </div>
 
       <div class="flex flex-column align-items-start">
-        <a href="https://fotografie-nine.vercel.app" target="_blank">
+        <a *ngIf="repo.homepageUrl" [href]="repo.homepageUrl" target="_blank">
           <p-button [text]="true" icon="pi pi-external-link" label="Deployment"/>
         </a>
         <a [href]="repo.url" target="_blank">
