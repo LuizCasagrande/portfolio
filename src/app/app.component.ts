@@ -31,6 +31,6 @@ export class AppComponent {
 
     this.seoService.updateTitle(name);
     this.seoService.updateMeta(description, metaTags.join(', '));
-    this.seoService.updateOpenGraph(name, description);
+    this.seoService.updateOpenGraph(name, description, 'https://luizcasagrande.dev/assets/images/profile.jpg');
   }
 }
